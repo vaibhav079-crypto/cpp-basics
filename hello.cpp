@@ -1,15 +1,22 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
 int main(){
-    int age = 18;
-    char grade = 'b';
-    int height = 6;
+    int age;
+    string name;
+
+    cout << "enter your name: ";
+    cin >> name;
+
+    cout << "enter your age: ";
+    cin >> age;
 
 
-    cout << age << endl;
-    cout << grade << endl;
-    cout << height << endl;
+
+    cout << " i am " << age << "years old" << endl;
+    cout << "my name is" << name << endl;
+    
 
 
     return 0;
