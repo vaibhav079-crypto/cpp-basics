@@ -1,19 +1,18 @@
 #include<iostream>
-//sum of 2 numbers
+// take a number print its square
 using namespace std;
 
 int main(){
-    int a,b;
+    int a;
 
     cout << "enter first number: ";
     cin >> a;
 
-    cout << "enter second number: ";
-    cin >> b;
+    
 
-    int sum = a+b;
+    int square = a*a;
 
-    cout << " sum is " << sum;
+    cout << " square is " << square;
     
 
 
