@@ -1,5 +1,5 @@
 #include<iostream>
-// take a number print its square
+// Take radius of a circle and print
 using namespace std;
 
 int main(){
@@ -10,9 +10,9 @@ int main(){
 
     
 
-    int square = a*a;
+    int circle = 3.14*a*a;
 
-    cout << " square is " << square;
+    cout << " radius of circle is " << circle;
     
 
 
