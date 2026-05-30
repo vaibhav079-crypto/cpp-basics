@@ -1,21 +1,19 @@
 #include<iostream>
-#include<string>
+//sum of 2 numbers
 using namespace std;
 
 int main(){
-    int age;
-    string name;
+    int a,b;
 
-    cout << "enter your name: ";
-    cin >> name;
+    cout << "enter first number: ";
+    cin >> a;
 
-    cout << "enter your age: ";
-    cin >> age;
+    cout << "enter second number: ";
+    cin >> b;
 
+    int sum = a+b;
 
-
-    cout << " i am " << age << "years old" << endl;
-    cout << "my name is" << name << endl;
+    cout << " sum is " << sum;
     
 
 
