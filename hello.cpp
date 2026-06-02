@@ -1,30 +1,26 @@
 #include<iostream>
-// Take marks of 3 subjects and print total marks
+#include<string>
 using namespace std;
 
 int main(){
-    int a,b,c,d,e;
+    int marks;
+    cin >> marks;
 
-    cout << "marks of 1st subject: ";
-    cin >> a;
-    cout << "marks of 2nd subject: ";
-    cin >> b;
-    cout << "marks of 3rd subject: ";
-    cin >> c;
-    cout << "marks of 4td subject: ";
-    cin >> d;
-    cout << "marks of 5th subject: ";
-    cin >> e;
+    if(marks >= 100) {
+        cout << "A+";
 
+    }
+    else if (marks >=80){
+        cout << "B";
+    }
+    else if (marks >= 60){
+        cout << "D";
 
-    
+    }
+    else {
+        cout << "fail";
+    }
 
-     int total = a + b + c + d + e;
-     int average = total/5;
-
-    cout << " total marks of 5 subjects are: " << total;
-    cout << " average marks of 5 subjects are: " << average;
-    
 
 
     return 0;
