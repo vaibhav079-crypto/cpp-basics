@@ -1,24 +1,23 @@
 #include<iostream>
 #include<string>
 using namespace std;
-
+// take two numbers and print largest
 int main(){
-    int marks;
-    cin >> marks;
+    int n,m,p;
+    cin >> n >> m >> p;
 
-    if(marks >= 100) {
-        cout << "A+";
-
-    }
-    else if (marks >=80){
-        cout << "B";
-    }
-    else if (marks >= 60){
-        cout << "D";
+    if(n > m && n > p) {
+        cout << n <<" is largest";
 
     }
+    else if(m > n && m > p){
+        cout << m << "is largest";
+    }
+
+
+    
     else {
-        cout << "fail";
+        cout << p <<  "is largest";
     }
 
 
