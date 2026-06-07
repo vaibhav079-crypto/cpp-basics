@@ -1,25 +1,16 @@
 #include<iostream>
 #include<string>
 using namespace std;
-// take two numbers and print largest
 int main(){
-    int n,m,p;
-    cin >> n >> m >> p;
+    int n;
+    cin >> n;
+    int fact = 1;
 
-    if(n > m && n > p) {
-        cout << n <<" is largest";
+    for(int i = 1; i <= n; i = i + 1){
+        fact = fact * i;
 
     }
-    else if(m > n && m > p){
-        cout << m << "is largest";
-    }
-
-
-    
-    else {
-        cout << p <<  "is largest";
-    }
-
+     cout << fact;
 
 
     return 0;
