@@ -1,20 +1,29 @@
 #include<iostream>
-#include<string>
 using namespace std;
-int main(){
-    int n;
-    cin >> n;
-    int fact = 1;
-
-    for(int i = 1; i <= n; i = i + 1){
-        fact = fact * i;
-
+int main()
+{
+    int arr[5] = {10,20,30,40,50};
+    bool sorted = true;
+    for(int i = 0;i < 4; i++)
+    {  if(arr[i] > arr[i+1]){
+        sorted = false;
     }
-     cout << fact;
-
+    
+        
+    }
+    if(sorted){
+        cout << "sorted";
+        
+    }
+    else{
+        cout << "not sorted";
+    }
 
     return 0;
+    
+ }
+ 
 
 
 
-}
+
