@@ -1,27 +1,31 @@
 #include<iostream>
 using namespace std;
-int main()
-{
-    int arr[5] = {10,20,30,40,50};
-    bool sorted = true;
-    for(int i = 0;i < 4; i++)
-    {  if(arr[i] > arr[i+1]){
-        sorted = false;
+int main(){
+int i,j;
+i = 0;
+j = 6;
+int arr[7] = {1,2,4,6,8,10,15};
+ int target = 12;
+while(i<j){
+    int sum = arr[i] + arr[j];
+    if(sum == target){
+        cout << "indexes are:" << i+1 << " " << j+1;
+        break;
     }
+    else if(sum<target){
+        i++;
+    }
+    else if(sum>target){
+        j--;
+    }
+}
+return 0;
+}
     
-        
-    }
-    if(sorted){
-        cout << "sorted";
-        
-    }
-    else{
-        cout << "not sorted";
-    }
 
-    return 0;
     
- }
+    
+ 
  
 
 
