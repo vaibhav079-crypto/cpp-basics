@@ -1,29 +1,26 @@
 #include<iostream>
 using namespace std;
 int main(){
-int i,j;
+int n = 7,i,j;
 i = 0;
-j = 6;
-int arr[7] = {1,2,4,6,8,10,15};
- int target = 12;
-while(i<j){
-    int sum = arr[i] + arr[j];
-    if(sum == target){
-        cout << "indexes are:" << i+1 << " " << j+1;
-        break;
-    }
-    else if(sum<target){
+j = 1;
+int arr[7] = {2,2,3,3,6,9,9};
+while(j<n){
+    if(arr[j] != arr[j]){
         i++;
+        arr[i] = arr[j];
     }
-    else if(sum>target){
-        j--;
-    }
-}
-return 0;
-}
-    
 
-    
+    j++;
+}
+    cout << "unique elements are : ";
+    for(int k=0; k<=i ; k++){
+        cout << arr[k] <<" ";
+    }
+    cout << " \nlength = " << i+1;
+    return 0;
+}
+
     
  
  
